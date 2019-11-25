@@ -1,0 +1,93 @@
+<template>
+  <div class="inner_wrap box_nav">
+    <button class="btn_close" @click="closeMenu">
+      <span class="ico_close">Close Menu</span>
+    </button>
+    <nav>
+      <ul>
+        <li v-for="item in menuList" :key="item.order"  @click="closeMenu">
+          <router-link class="link_item" :to="item.url">{{ item.title }}</router-link>
+        </li>
+      </ul>
+    </nav>
+    <div class="group_link">
+      <a href="#none" class="link_blog">blog</a>
+      <a href="mailto:jieunyyo@naver.com" class="link_email">jieunyyo@naver.com</a>
+    </div>
+  </div>
+</template>
+
+<script>
+export default {
+  name: 'Nav',
+  props: {
+    menuList: Array,
+    closeMenu: Function
+  }
+}
+</script>
+
+<style scoped>
+  .box_nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 90;
+    height: 960px;
+    background-image: url(../../assets/images/nav_back.jpg);
+  }
+  .btn_close {
+    position: fixed;
+    top: 35px;
+    right: 70px;
+  }
+  .ico_close {
+    display: block;
+    z-index: 90;
+    width: 40px;
+    height: 40px;
+    font-size: 0;
+    background: url(../../assets/images/ico_close.png) no-repeat left top;
+  }
+  .group_link {
+    position: absolute;
+    bottom: 80px;
+    left: 70px;
+  }
+  nav {
+    margin: 312px 0 0 465px;
+  }
+  .link_item {
+    display: block;
+    margin-bottom: 45px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 80px;
+    color: #fff;
+    letter-spacing: 0.25;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+  .link_item:hover {
+    color: transparent;
+    background-clip: text;
+  }
+  nav li:nth-child(1) .link_item:hover {
+    background-image: linear-gradient(48deg, #00ffb4, #008af3);
+  }
+  nav li:nth-child(2) .link_item:hover {
+    background-image: linear-gradient(48deg, #3ca1ff, #124beb);
+  }
+  nav li:nth-child(3) .link_item:hover {
+    background-image: linear-gradient(48deg, #e04787, #6e26fa);
+  }
+    
+  .group_link .link_blog {
+    display: block;
+    width: 30px;
+    height: 30px;
+  }
+  .group_link .link_email {
+    /* display: block; */
+  }
+</style>
