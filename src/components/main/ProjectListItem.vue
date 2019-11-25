@@ -9,11 +9,6 @@
 export default {
   name: 'ProjectListItem',
   props: ['project', 'isOver'],
-  data() {
-    return {
-      // project: Object
-    }
-  }
 }
 </script>
 

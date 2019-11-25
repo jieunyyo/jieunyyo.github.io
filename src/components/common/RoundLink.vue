@@ -1,5 +1,6 @@
 <template>
-  <router-link :class="themeClass" :to="url" :target="target ? target : '_top'">{{ name }}</router-link>
+  <a v-if="target" :class="themeClass" :href="url" >{{ name }}</a>
+  <router-link v-else :class="themeClass" :to="url" >{{ name }}</router-link>
 </template>
 
 <script>
