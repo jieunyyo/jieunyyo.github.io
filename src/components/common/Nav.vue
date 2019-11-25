@@ -11,7 +11,7 @@
       </ul>
     </nav>
     <div class="group_link">
-      <a href="#none" class="link_blog">blog</a>
+      <a href="https://blog.naver.com/j_jieun_" class="link_blog">blog</a>
       <a href="mailto:jieunyyo@naver.com" class="link_email">jieunyyo@naver.com</a>
     </div>
   </div>
@@ -48,6 +48,7 @@ export default {
     width: 40px;
     height: 40px;
     font-size: 0;
+    color: transparent;
     background: url(../../assets/images/ico_close.png) no-repeat left top;
   }
   .group_link {
@@ -62,11 +63,11 @@ export default {
     display: block;
     margin-bottom: 45px;
     font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
     font-size: 80px;
     color: #fff;
     letter-spacing: 0.25;
     text-transform: uppercase;
-    text-decoration: none;
   }
   .link_item:hover {
     color: transparent;
@@ -84,10 +85,20 @@ export default {
     
   .group_link .link_blog {
     display: block;
+    z-index: 99;
     width: 30px;
     height: 30px;
+    margin-bottom: 40px;
+    font-size: 0;
+    color: transparent;
+    background: url(../../assets/images/ico_blog.png) no-repeat left top;
   }
   .group_link .link_email {
-    /* display: block; */
+    z-index: 99;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #fff;
+    letter-spacing: 0.25;
   }
 </style>

@@ -13,7 +13,7 @@ export default {
     height: 98px;
     padding: 42px 0;
     font-size: 14px;
-    font-weight: bold;
+    font-weight: 400;
     text-align: center;
     color: #fff;
     background-color: #222;

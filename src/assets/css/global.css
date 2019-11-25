@@ -16,8 +16,11 @@ time, mark, audio, video {
   color: #000;
   box-sizing: border-box;
 }
+a {
+  text-decoration: none;
+}
 img {
-  display:block;
+  display: block;
 }
 button {
   padding: 0;
@@ -25,7 +28,9 @@ button {
   background: none;
   -webkit-appearance: none;
 }
-
+.dimmed_on {
+  overflow: hidden;
+}
 .screen_out {
   overflow: hidden;
   position: absolute;

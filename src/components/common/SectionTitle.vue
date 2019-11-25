@@ -21,7 +21,7 @@ export default {
   h2 {
     font-family: 'Josefin Sans', sans-serif;
     font-size: 50px;
-    font-weight: bold;
+    font-weight: 700;
     text-align: center;
     letter-spacing: 0.25;
     text-transform: uppercase;
