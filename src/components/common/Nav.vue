@@ -5,7 +5,7 @@
     </button>
     <nav>
       <ul>
-        <li v-for="item in menuList" :key="item.order"  @click="closeMenu">
+        <li v-for="item in menuList" :key="item.id"  @click="closeMenu">
           <router-link class="link_item" :to="item.url">{{ item.title }}</router-link>
         </li>
       </ul>

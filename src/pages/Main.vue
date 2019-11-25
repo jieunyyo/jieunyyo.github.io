@@ -18,10 +18,9 @@ export default {
     MainVisual,
     IntroProject,
     IntroAbout,
+  },
+  mounted() {
+    window.scrollTo(0,0);
   }
 }
 </script>
-
-<style scoped>
-
-</style>

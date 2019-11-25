@@ -74,10 +74,7 @@ export default {
     color: #bbb;
   }
   
-  .light_theme .header_logo {
-    color: #fff;
-  }
-
+  .light_theme .header_logo,
   .light_theme .header_text {
     color: #fff;
   }

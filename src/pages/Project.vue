@@ -37,9 +37,10 @@ export default {
     }
   },
   created() {
-    console.dir(process.env)
     this.project = projectList[this.$route.params.id]
-    console.dir(this.project)
+  },
+  mounted() {
+    window.scrollTo(0,0);
   }
 }
 </script>
