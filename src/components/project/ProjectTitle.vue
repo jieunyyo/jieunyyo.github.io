@@ -24,7 +24,6 @@ export default {
   .box_title {
     height: 928px;
     padding-top: 200px;
-    /* background: ; */
   }
   .box_title .title_project {
     font-size: 90px;

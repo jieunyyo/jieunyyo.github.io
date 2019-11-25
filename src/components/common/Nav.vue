@@ -11,7 +11,7 @@
       </ul>
     </nav>
     <div class="group_link">
-      <a href="https://blog.naver.com/j_jieun_" class="link_blog">blog</a>
+      <a href="https://blog.naver.com/j_jieun_" target="_blank" class="link_blog">blog</a>
       <a href="mailto:jieunyyo@naver.com" class="link_email">jieunyyo@naver.com</a>
     </div>
   </div>

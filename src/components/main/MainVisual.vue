@@ -25,6 +25,9 @@ export default {
 </script>
 
 <style scoped>
+  .section_mainv {
+    height: 850px;
+  }
   .inner_middle {
     position: relative; 
   }
@@ -46,8 +49,9 @@ export default {
     line-height:46px;
   }
   .group_img {
-    position: relative; 
+    position: relative;
     z-index: 10;
+    height: 850px;
   }
   .ico_slash {
     display: block;
