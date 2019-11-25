@@ -26,8 +26,8 @@
           저에게는 그러한 도전들이 깊어가는 불면의 밤에서 멈추지 않고 일할 수 있는 원동력으로
           자리했습니다. 그리고 나는 그 모든 순간을 사랑합니다.  I ♡ design
         </p>
-        <RoundLink class="btn_more" name="이력서보기" url="test.pdf" target="_blank"/>
-        <!-- <a class="btn_more" href="test.pdf" target="_blank">이력서보기</a> -->
+        <!-- <RoundLink class="btn_more" name="이력서보기" url="test.pdf" target="_blank"/> -->
+        <a class="btn_more" href="test.pdf" target="_blank">이력서보기</a>
       </div>
     </div>
     <div class="section_summary inner_middle">
@@ -41,7 +41,7 @@
 import SectionTitle from '../components/common/SectionTitle'
 import AboutVisual from '../components/about/AboutVisual'
 import AboutSummary from '../components/about/AboutSummary'
-import RoundLink from '../components/common/RoundLink'
+// import RoundLink from '../components/common/RoundLink'
 
 export default {
   name: 'About',
@@ -49,7 +49,7 @@ export default {
     SectionTitle,
     AboutVisual,
     AboutSummary,
-    RoundLink
+    // RoundLink
   },
   methods: {
     handleClick: () => {

@@ -1,8 +1,7 @@
 <template>
   <ul class="list_project">
     <li v-for="(project, index) in projects" :key="index">
-      <ProjectListItem v-if="parseInt((index+1)/2) !== parseInt((index)/2)" class="item_project small_item" :project="project"/>
-      <ProjectListItem v-else class="item_project" :project="project"/>
+      <ProjectListItem :project="project" :class="`${parseInt((index+1)/2)%2 ? ' small_item' : ''}`"/>
     </li>
   </ul>
 </template>
@@ -19,7 +18,7 @@ export default {
     return {
       projects: projectList,
     }
-  },
+  }
 }
 </script>
 
@@ -32,19 +31,14 @@ export default {
     height: 720px;
     margin-bottom: 130px;
   }
+  .list_project li:hover img {
+    width: 80%;
+    height: 80%;
+  }
   .list_project li:nth-child(2n) {
     margin-left: 105px;
   }
-  .list_project .item_project {
-    width: 675px;
-    height: 720px;
-    background: green;
+  .list_project .item_project img {
+    width: 100%;
   }
-  .list_project .small_item {
-    width: 420px;
-    height: 420px;
-    margin-top: 156px;
-    background: blue;
-  }
-  
 </style>

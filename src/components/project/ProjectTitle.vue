@@ -23,16 +23,19 @@ export default {
 <style scoped>
   .box_title {
     height: 928px;
-    padding-top: 200px;
+    padding-top: 192px;
   }
   .box_title .title_project {
+    margin: 0 0 24px -3px;
     font-size: 90px;
     font-weight: 700;
     line-height: 1.1;
     letter-spacing: -5px;
     vertical-align: middle;
+    white-space: pre;
   }
   .box_title .title_project_en {
+    margin-bottom: 0;
     font-family: 'Josefin Sans', sans-serif;
   }
   .box_title .category_project {

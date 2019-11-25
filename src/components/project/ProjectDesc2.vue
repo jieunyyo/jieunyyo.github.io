@@ -2,8 +2,8 @@
   <div class="box_desc2">
     <div class="group_desc2">
       <div class="inner_middle">
-        <strong class="title_desc2">{{ desc2.title }}</strong>
-        <p class="text_desc2">{{ desc2.text }}</p>
+        <strong class="title_desc2 down">{{ desc2.title }}</strong>
+        <p class="text_desc2 down">{{ desc2.text }}</p>
         <img class="img_desc2" :src="require(`@/assets/images/project_${filename}_device.png`)" />
       </div>
     </div>
@@ -14,6 +14,36 @@
 export default {
   name: 'ProjectDesc2',
   props: ['desc2', 'filename'],
+  methods: {
+    handleScroll() {
+      let timer;
+      const $title = document.querySelector('.title_desc2')
+      const $text = document.querySelector('.text_desc2')
+      if (!timer) {
+        timer = setTimeout(function() {
+          timer = null;
+          const trigger = $title.offsetParent.offsetTop - 400
+          const windowY = window.scrollY
+          if (windowY < trigger) {
+            $title.classList.add('down')
+            $text.classList.add('down')
+          }
+          if (windowY > trigger) {
+            $title.classList.remove('down')
+          }
+          if (windowY > trigger + 150) {
+            $text.classList.remove('down')
+          }
+        }, 100);
+      }
+    }
+  },
+  mounted() {
+    window.addEventListener('scroll', this.handleScroll, false)
+  },
+  destroyed(){
+    window.removeEventListener('scroll', this.handleScroll)
+  }
 }
 </script>
 
@@ -34,6 +64,7 @@ export default {
     font-size: 34px;
     font-weight: 700;
     color: #fff;
+    transition: margin 1s;
   }
   .box_desc2 .text_desc2 {
     width: 570px;
@@ -41,6 +72,13 @@ export default {
     line-height: 30px;
     word-break: keep-all;
     color: #fff;
+    transition: margin 2s;
+  }
+  .title_desc2.down {
+    margin-top: 60px;
+  }
+  .text_desc2.down {
+    margin-top: 70px;
   }
   .box_desc2 .img_desc2 {
     position: absolute;
