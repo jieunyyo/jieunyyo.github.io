@@ -1,15 +1,11 @@
 <template>
-  <router-link :class="themeClass" :to="url">{{ name }}</router-link>
+  <router-link :class="themeClass" :to="url" :target="target ? target : '_top'">{{ name }}</router-link>
 </template>
 
 <script>
 export default {
   name: 'RoundLink',
-  props: {
-    name: String,
-    url: String,
-    theme: String
-  },
+  props: ['name', 'url', 'theme', 'target'],
   computed: {
     themeClass() {
       return this.theme ? this.theme : ''

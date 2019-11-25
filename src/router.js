@@ -18,7 +18,7 @@ const routes = [
         component: Main
       },
       {
-        path: 'about',
+        path: '/about',
         component: About
       },
       {
@@ -34,7 +34,6 @@ const router = new Router({
   routes,
   scrollBehavior (to, from, savedPosition) { // eslint-disable-line no-unused-vars
     if (to.hash) {
-      console.dir(to)
       return {
         selector: to.hash
       }
