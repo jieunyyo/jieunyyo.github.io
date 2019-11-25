@@ -27,7 +27,7 @@
           자리했습니다. 그리고 나는 그 모든 순간을 사랑합니다.  I ♡ design
         </p>
         <!-- <RoundLink class="btn_more" name="이력서보기" url="./assets/test.pdf" @click="handleClick" /> -->
-        <a class="btn_more" href="./assets/images/test.pdf" target="_blank">이력서보기</a>
+        <a class="btn_more" href="<%= BASE_URL %>test.pdf" target="_blank">이력서보기</a>
       </div>
     </div>
     <div class="section_summary inner_middle">
