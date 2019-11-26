@@ -56,7 +56,7 @@ export default {
 <style scoped>
   header {
     display: flex;
-    position: relative;
+    /* position: relative; */
     align-items: center;
     justify-content: space-between;
     height: 110px;

@@ -29,7 +29,7 @@ button {
   -webkit-appearance: none;
 }
 .dimmed_on {
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 .dimmed {
   display: none;

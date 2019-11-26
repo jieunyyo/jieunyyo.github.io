@@ -39,13 +39,13 @@ export default {
     background-image: url(../../assets/images/nav_back.jpg);
   }
   .btn_close {
-    /* position: absolute;
+    position: absolute;
     z-index: 99;
     top: 35px;
-    right: 70px; */
-    float: right;
+    right: 70px;
+    /* float: right;
     z-index: 99;
-    margin-top: 35px;
+    margin-top: 35px; */
   }
   .ico_close {
     display: block;
