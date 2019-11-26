@@ -1,8 +1,8 @@
 <template>
   <div class="box_info">
     <div class="group_text">
-      <strong class="title_desc1">{{ info.title }}</strong>
-      <p class="text_desc1">{{ info.text }}</p>
+      <strong class="title_desc1 down">{{ info.title }}</strong>
+      <p class="text_desc1 down">{{ info.text }}</p>
     </div>
     <dl class="group_info">
       <dt>RELEASE DATE</dt>
@@ -65,7 +65,7 @@ export default {
     font-weight: 700;
     line-height: 60px;
     border-bottom: 2px solid #222;
-    transition: margin 1s;
+    transition: margin 0.5s;
   }
   .group_text .text_desc1 {
     margin-top: 24px;
@@ -73,7 +73,7 @@ export default {
     line-height: 30px;
     color: #666;
     white-space: pre;
-    transition: margin 1s;
+    transition: margin 0.5s;
   }
   .box_info .group_info {
     float: right;

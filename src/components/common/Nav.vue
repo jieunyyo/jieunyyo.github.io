@@ -1,5 +1,5 @@
 <template>
-  <div class="inner_wrap box_nav">
+  <div class="inner_large box_nav">
     <button class="btn_close" @click="closeMenu">
       <span class="ico_close">Close Menu</span>
     </button>
@@ -10,7 +10,7 @@
         </li>
       </ul>
     </nav>
-    <div class="group_link">
+    <div class="inner_large group_link">
       <a href="https://blog.naver.com/j_jieun_" target="_blank" class="link_blog">blog</a>
       <a href="mailto:jieunyyo@naver.com" class="link_email">jieunyyo@naver.com</a>
     </div>
@@ -29,7 +29,8 @@ export default {
 
 <style scoped>
   .box_nav {
-    position: fixed;
+    position: absolute;
+    /* position: fixed; */
     top: 0;
     right: 0;
     left: 0;
@@ -38,13 +39,17 @@ export default {
     background-image: url(../../assets/images/nav_back.jpg);
   }
   .btn_close {
-    position: fixed;
+    /* position: absolute;
+    z-index: 99;
     top: 35px;
-    right: 70px;
+    right: 70px; */
+    float: right;
+    z-index: 99;
+    margin-top: 35px;
   }
   .ico_close {
     display: block;
-    z-index: 90;
+    /* z-index: 90; */
     width: 40px;
     height: 40px;
     font-size: 0;
@@ -54,7 +59,7 @@ export default {
   .group_link {
     position: absolute;
     bottom: 80px;
-    left: 70px;
+    left: 0;
   }
   nav {
     margin: 312px 0 0 465px;

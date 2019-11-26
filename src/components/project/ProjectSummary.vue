@@ -49,7 +49,7 @@ export default {
       if (!timer) {
         timer = setTimeout(function() {
           timer = null;
-          if (window.scrollY < trigger) {
+          if (window.scrollY < trigger - 500) {
             $box.classList.add('down')
           }
           if (window.scrollY > trigger) {
@@ -89,10 +89,10 @@ export default {
     font-size: 25px;
     font-weight: 700;
     letter-spacing: 0.25px;
-    transition: padding 1s;
+    transition: padding 0.5s;
   }
   .group_summary .desc_summary {
-    transition: padding 1.5s;
+    transition: padding 0.7s;
   }
   .summary_design {
     margin-bottom: 75px;
@@ -109,10 +109,10 @@ export default {
     white-space: pre;
   }
   .summary_color .title_summary {
-    transition: padding 2s;
+    transition: padding 0.9s;
   }
   .summary_color .desc_summary {
-    transition: padding 2.5s;
+    transition: padding 1.1s;
   }
   .summary_color .list_chip {
     overflow: hidden;
@@ -146,10 +146,10 @@ export default {
     top: 134px;
   }
   .summary_font .title_summary {
-    transition: padding 2.5s;
+    transition: padding 1.3s;
   }
   .summary_font .desc_summary {
-    transition: padding 3s;
+    transition: padding 1.6s;
   }
   .summary_font ul {
     overflow: hidden;

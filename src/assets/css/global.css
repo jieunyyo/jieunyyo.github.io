@@ -31,6 +31,16 @@ button {
 .dimmed_on {
   overflow: hidden;
 }
+.dimmed {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 80;
+  height: 960px;
+  background-color: #242424
+}
 .screen_out {
   overflow: hidden;
   position: absolute;

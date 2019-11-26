@@ -1,5 +1,5 @@
 <template>
-  <header :class="`inner_wrap${lightTheme}`">
+  <header :class="`inner_large${lightTheme}`">
     <h1 class="header_logo">
       <router-link to="/">
         <img v-if="menuOn" src="@/assets/images/img_logo_white.png" alt="JIEUNYYO">
@@ -33,10 +33,14 @@ export default {
     closeMenu() {
       this.menuOn = false
       document.body.classList.remove('dimmed_on')
+      document.querySelector('.dimmed').style.display = 'none';
+      scrollTo(0, 0)
     },
     openMenu() {
       this.menuOn = true
       document.body.classList.add('dimmed_on')
+      document.querySelector('.dimmed').style.display = 'block';
+      scrollTo(0, 0)
     }
   },
   computed: {
@@ -52,6 +56,7 @@ export default {
 <style scoped>
   header {
     display: flex;
+    position: relative;
     align-items: center;
     justify-content: space-between;
     height: 110px;

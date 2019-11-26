@@ -1,9 +1,12 @@
 <template>
-  <div class="wrap">
-    <Header />
-    <router-view />
-    <a href="#top" class="btn_scrolltop"><span class="ico_scrolltop">맨 위로</span></a>
-    <Footer />
+  <div>
+    <div class="dimmed"></div>
+    <div class="wrap">
+      <Header />
+      <router-view />
+      <a href="#top" class="btn_scrolltop"><span class="ico_scrolltop">맨 위로</span></a>
+      <Footer />
+    </div>
   </div>
 </template>
 <script>

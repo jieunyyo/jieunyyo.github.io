@@ -31,7 +31,7 @@ export default {
           if (windowY > trigger) {
             $title.classList.remove('down')
           }
-          if (windowY > trigger + 150) {
+          if (windowY > trigger + 50) {
             $text.classList.remove('down')
           }
         }, 100);
@@ -64,7 +64,7 @@ export default {
     font-size: 34px;
     font-weight: 700;
     color: #fff;
-    transition: margin 1s;
+    transition: margin 0.5s;
   }
   .box_desc2 .text_desc2 {
     width: 570px;
@@ -72,7 +72,7 @@ export default {
     line-height: 30px;
     word-break: keep-all;
     color: #fff;
-    transition: margin 2s;
+    transition: margin 0.7s;
   }
   .title_desc2.down {
     margin-top: 60px;
