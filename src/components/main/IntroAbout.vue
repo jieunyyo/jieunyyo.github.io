@@ -40,4 +40,7 @@ export default {
   .btn_more {
     margin-top: 50px;
   }
+  .btn_more:hover {
+    color: #222;
+  }
 </style>
