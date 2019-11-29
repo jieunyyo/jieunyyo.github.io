@@ -30,7 +30,7 @@
       </div>
     </div>
     <div class="section_summary inner_middle">
-      <AboutSummary class="box_work" :title="`Work\nExperience`" :list="['2014-2015\n복사기 화면 ui 디자인,유지 보수관리\n신도리코','2017-2019\n반응형 웹 디자인,유지 보수관리\n헬로웹']" />
+      <AboutSummary class="box_work" :title="`Work\nExperience`" :list="['2017-2019\n반응형 웹 디자인,유지 보수관리\n헬로웹','2014-2015\n복사기 화면 ui 디자인,유지 보수관리\n신도리코']" />
       <AboutSummary class="box_skills" :title="`Software\nSkills`" :list="['Adobe Photoshop','Adobe Illustrator','HTML / CSS']" />
     </div>
   </div>
