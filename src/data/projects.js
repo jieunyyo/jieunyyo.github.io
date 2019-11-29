@@ -9,7 +9,7 @@ const projectList = [
     titleColor: '#fff',
     categoryColor: '#fff',
     releaseDate: '2018.09',
-    role: '메인&서브 디자인',
+    role: '메인&서브디자인',
     desc1: {
       title: 'RADANZ 반응형 웹사이트 구축',
       text: `라이단즈 홈페이지 신규 구축 프로젝트는 고객 신뢰, 전문장비를 바탕으로 만들어진 제품을\n사용자에게 기업 아이덴티티를 전달하고 라이단즈만의 기술, 제품 등을 홍보하기 위한 목적으로\n진행한 프로젝트입니다.`,
