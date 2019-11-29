@@ -40,4 +40,11 @@ export default {
     background: url(../assets/images/ico_scrolltop.png) no-repeat left top;
     font-size: 0;
   }
+   .btn_scrolltop .ico_scrolltop:hover {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../assets/images/ico_scrolltop_over.png) no-repeat left top;
+    font-size: 0;
+  }
 </style>
