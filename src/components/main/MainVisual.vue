@@ -74,5 +74,31 @@ export default {
     height: 30px;
     margin-top: 215px;
     background-image: url(../../assets/images/ico_below.png);
+    animation-name: scrollPlease;
+    -webkit-animation-duration: 0.5s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-timing-function: ease;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease;
+  }
+
+  @-webkit-keyframes scrollPlease {
+    from {
+      margin-top: 215px;
+    }
+    to {
+      margin-top: 200px;
+    }
+  }
+  @keyframes scrollPlease {
+    from {
+      margin-top: 215px;
+    }
+    to {
+      margin-top: 200px;
+    }
   }
 </style>
