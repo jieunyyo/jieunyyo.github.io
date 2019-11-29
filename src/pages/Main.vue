@@ -20,7 +20,22 @@ export default {
     IntroAbout,
   },
   mounted() {
-    window.scrollTo(0,0);
+    const center = (document.body.scrollWidth - document.body.clientWidth) / 2
+    let top = 0
+    if (this.$route.hash === '#projects') {
+      top = 1020
+    }
+    window.scrollTo(center, top)
+  },
+  watch: {
+    '$route' (to) {
+      const center = (document.body.scrollWidth - document.body.clientWidth) / 2
+      let top = 0
+      if (to.hash === '#projects') {
+        top = 1020
+      }
+      window.scrollTo(center, top)
+    }
   }
 }
 </script>

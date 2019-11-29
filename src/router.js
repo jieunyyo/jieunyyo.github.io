@@ -1,44 +1,37 @@
-import Vue from 'vue'
-import Router from 'vue-router'
+import Vue from "vue";
+import Router from "vue-router";
 
-import Layout from './pages/Layout'
-import Main from './pages/Main'
-import About from './pages/About'
-import Project from './pages/Project'
+import Layout from "./pages/Layout";
+import Main from "./pages/Main";
+import About from "./pages/About";
+import Project from "./pages/Project";
 
-Vue.use(Router)
+Vue.use(Router);
 
 const routes = [
   {
-    path: '/',
+    path: "/",
     component: Layout,
     children: [
       {
-        path: '',
+        path: "",
         component: Main
       },
       {
-        path: '/about',
+        path: "/about",
         component: About
       },
       {
-        path: '/project/:id',
-        component: Project,
+        path: "/project/:id",
+        component: Project
       }
     ]
   }
-]
+];
 
 const router = new Router({
   // mode:'history',
-  routes,
-  scrollBehavior (to, from, savedPosition) { // eslint-disable-line no-unused-vars
-    if (to.hash) {
-      return {
-        selector: to.hash
-      }
-    }
-  }
-})
+  routes
+});
 
-export default router
+export default router;

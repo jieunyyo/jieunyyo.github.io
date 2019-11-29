@@ -33,14 +33,12 @@ export default {
     closeMenu() {
       this.menuOn = false
       document.body.classList.remove('dimmed_on')
-      document.querySelector('.dimmed').style.display = 'none';
-      scrollTo(0, 0)
+      document.querySelector('.dimmed').style.display = 'none'
     },
     openMenu() {
       this.menuOn = true
       document.body.classList.add('dimmed_on')
-      document.querySelector('.dimmed').style.display = 'block';
-      scrollTo(0, 0)
+      document.querySelector('.dimmed').style.display = 'block'
     }
   },
   computed: {
@@ -56,7 +54,6 @@ export default {
 <style scoped>
   header {
     display: flex;
-    /* position: relative; */
     align-items: center;
     justify-content: space-between;
     height: 110px;

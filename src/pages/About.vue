@@ -51,7 +51,8 @@ export default {
     RoundLink
   },
   mounted() {
-    window.scrollTo(0,0);
+    const center = (document.body.scrollWidth - document.body.clientWidth) / 2
+    window.scrollTo(center, 0)
   }
 }
 </script>

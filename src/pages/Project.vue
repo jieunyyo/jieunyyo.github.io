@@ -62,10 +62,14 @@ export default {
   methods: {
     hasSummary() {
       return this.project.designDesc || this.project.colors || this.project.fonts
+    },
+    positionScroll(center) {
+      window.scrollTo(center, 0)
     }
   },
   mounted() {
-    window.scrollTo(0,0);
+    const center = (document.body.scrollWidth - document.body.clientWidth) / 2
+    this.positionScroll(center)
   }
 }
 </script>

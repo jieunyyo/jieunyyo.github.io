@@ -5,7 +5,7 @@
     </button>
     <nav>
       <ul>
-        <li v-for="item in menuList" :key="item.id"  @click="closeMenu">
+        <li v-for="item in menuList" :key="item.id" @click="closeMenu">
           <router-link class="link_item" :to="item.url">{{ item.title }}</router-link>
         </li>
       </ul>
@@ -20,17 +20,22 @@
 <script>
 export default {
   name: 'Nav',
-  props: {
-    menuList: Array,
-    closeMenu: Function
+  props: ['menuList', 'closeMenu'],
+  methods: {
+    moveProjectList() {
+      this.closeMenu()
+      const center = (document.body.scrollWidth - document.body.clientWidth) / 2
+      const top = 1020
+      window.scrollTo(center, top)
+    }
   }
+
 }
 </script>
 
 <style scoped>
   .box_nav {
     position: absolute;
-    /* position: fixed; */
     top: 0;
     right: 0;
     left: 0;
@@ -43,13 +48,9 @@ export default {
     z-index: 99;
     top: 35px;
     right: 70px;
-    /* float: right;
-    z-index: 99;
-    margin-top: 35px; */
   }
   .ico_close {
     display: block;
-    /* z-index: 90; */
     width: 40px;
     height: 40px;
     font-size: 0;
