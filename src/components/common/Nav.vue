@@ -12,7 +12,7 @@
     </nav>
     <div class="inner_large group_link">
       <a href="https://blog.naver.com/j_jieun_" target="_blank" class="link_blog">blog</a>
-      <a href="mailto:jieunyyo@gmail.com" class="link_email">jieunyyo@gmail.com</a>
+      <a href="mailto:jieunyyo@naver.com" class="link_email">jieunyyo@naver.com</a>
     </div>
   </div>
 </template>
