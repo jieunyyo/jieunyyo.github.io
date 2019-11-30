@@ -23,7 +23,7 @@ const projectList = [
     designDesc: `라이단즈의 고유의 컬러로 최대한 단순한 색 조합을 통해 브랜드 아이덴티티를 확립하고,\n응용컬러를 활용하여 브랜드 일관성을 유지하였습니다.`,
     colors: {
       main: '#004098',
-      sub: ['#f3f3f3']
+      sub: ['#f9f9f9']
     },
     fonts: [
       {id: 1, name: 'Noto Sans KR'},
