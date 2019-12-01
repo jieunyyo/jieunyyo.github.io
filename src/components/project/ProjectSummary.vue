@@ -49,10 +49,10 @@ export default {
       if (!timer) {
         timer = setTimeout(function() {
           timer = null;
-          if (window.scrollY < trigger - 500) {
+          if (window.pageYOffset < trigger - 500) {
             $box.classList.add('down')
           }
-          if (window.scrollY > trigger) {
+          if (window.pageYOffset > trigger) {
             $box.classList.remove('down')
           }
         }, 100);

@@ -23,7 +23,7 @@ export default {
         timer = setTimeout(function() {
           timer = null;
           const trigger = $title.offsetParent.offsetTop - 400
-          const windowY = window.scrollY
+          const windowY = window.pageYOffset
           if (windowY < trigger) {
             $title.classList.add('down')
             $text.classList.add('down')
