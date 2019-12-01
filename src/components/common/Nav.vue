@@ -80,6 +80,7 @@ export default {
     background-clip: text;
   }
   nav li:nth-child(1) .link_item:hover {
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00ffb4, endColorstr=#008af3, GradientType=1);
     background-image: #00ffb4;
     background-image: linear-gradient(48deg, #00ffb4, #008af3);
     background-image: -ms-linear-gradient(48deg, #00ffb4, #008af3);
@@ -87,9 +88,9 @@ export default {
     background-image: -webkit-linear-gradient(48deg, #00ffb4, #008af3);
     background-image: -o-linear-gradient(48deg, #00ffb4, #008af3);
     background-image: -webkit-gradient(48deg, #00ffb4, #008af3);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00ffb4, endColorstr=#008af3);
   }
   nav li:nth-child(2) .link_item:hover {
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#3ca1ff, endColorstr=#124beb, GradientType=1);
     background-image: #3ca1ff;
     background-image: linear-gradient(48deg, #3ca1ff, #124beb);
     background-image: -ms-linear-gradient(48deg, #3ca1ff, #124beb);
@@ -97,9 +98,9 @@ export default {
     background-image: -webkit-linear-gradient(48deg, #3ca1ff, #124beb);
     background-image: -o-linear-gradient(48deg, #3ca1ff, #124beb);
     background-image: -webkit-gradient(48deg, #3ca1ff, #124beb);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#3ca1ff, endColorstr=#124beb);
   }
   nav li:nth-child(3) .link_item:hover {
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#e04787, endColorstr=#6e26fa, GradientType=1);
     background-image: #e04787;
     background-image: linear-gradient(48deg, #e04787, #6e26fa);
     background-image: -ms-linear-gradient(48deg, #e04787, #6e26fa);
@@ -107,7 +108,6 @@ export default {
     background-image: -webkit-linear-gradient(48deg, #e04787, #6e26fa);
     background-image: -o-linear-gradient(48deg, #e04787, #6e26fa);
     background-image: -webkit-gradient(48deg, #e04787, #6e26fa);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#e04787, endColorstr=#6e26fa);
   }
     
   .group_link .link_blog {
