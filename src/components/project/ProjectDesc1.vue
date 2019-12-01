@@ -25,14 +25,14 @@ export default {
       if (!timer) {
         timer = setTimeout(function() {
           timer = null;
-          if (window.scrollY < 330) {
+          if (window.pageYOffset < 330) {
             $title.classList.add('down')
             $text.classList.add('down')
           }
-          if (window.scrollY > 330) {
+          if (window.pageYOffset > 330) {
             $title.classList.remove('down')
           }
-          if (window.scrollY > 450) {
+          if (window.pageYOffset > 450) {
             $text.classList.remove('down')
           }
         }, 100);
@@ -43,7 +43,7 @@ export default {
     window.addEventListener('scroll', this.handleScroll, false)
   },
   destroyed(){
-    window.removeEventListener('scroll', this.handleScroll)
+    window.removeEventListener('scroll', this.handleScroll, false)
   }
 }
 </script>
