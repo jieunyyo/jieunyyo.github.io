@@ -29,14 +29,7 @@
       :desc2="project.desc2"
       :filename="project.filename"
     />
-<!-- 
-    <div class="inner_middle">
-      <div :class="`box_sub${project.subPageCount === 1 ? 'img_only' : ''}`" v-if="project.subPageCount > 0">
-        <div class="box_column">
-          <img class="img_sub" v-for="(num) in project.subPageCount" :key="num" :src="require(`@/assets/images/project_${project.filename}_img${num+1}.jpg`)" :alt="`서브페이지${num}`" />
-        </div>
-      </div>
-    </div> -->
+
     <div class="inner_middle">
       <div :class="`box_sub sub_${project.filename}${project.subPageCount === 1 ? ' img_only' : ''}${project.subPageCount === 2 ? ' img_two' : ''}`" v-if="project.subPageCount > 0">
         <div :class="`box_column column_${num}`" v-for="(num) in project.subPageCount" :key="num">
@@ -88,6 +81,7 @@ export default {
 <style scoped>
   .img1_project {
     margin-bottom: 130px;
+    border: 1px solid #e5e5e5;
   }
   .box_sub {
     overflow: hidden;
@@ -102,6 +96,7 @@ export default {
   }
   .img_sub {
     width: 100%;
+    border: 1px solid #e5e5e5;
   }
   .box_sub.img_only {
     column-width: none;
@@ -125,6 +120,7 @@ export default {
     margin-top: 30px;
   }
   @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    /* for ie 10, 11 */
     .sub_speedrack .column_2,
     .sub_naraefood .column_2 {
       margin: 0;
