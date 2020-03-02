@@ -87,7 +87,7 @@ const projectList = [
   }, {
     id: 3,
     order: 3,
-    filename: 'hellochinese',
+    filename: 'openstore',
     title: '템플릿',
     category: 'Responsive web design',
     titleLang: 'ko',
@@ -103,7 +103,7 @@ const projectList = [
   }, {
     id: 4,
     order: 4,
-    filename: 'naraefood',
+    filename: 'hellochinese',
     title: '나래식품',
     category: 'Responsive web design',
     titleLang: 'ko',
