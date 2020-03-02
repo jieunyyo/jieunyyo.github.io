@@ -1,5 +1,5 @@
 <template>
-  <div class="box_summary" v-if="summaryList" :style="styleObj">
+  <div class="box_summary" v-if="summaryList" :style="backgroundStyle">
     <div class="inner_middle">
       <div v-for="(item, index) in summaryList" :key="index" class="group_summary">
         <strong class="title_summary">{{ item.title }}</strong>
@@ -15,8 +15,8 @@ export default {
   props: ['summaryBack', 'summaryList', 'filename'],
   data() {
     return {
-      styleObj: {
-        background: `url(${require(`@/assets/images/${this.summaryBack}`)})`
+      backgroundStyle: {
+        background: this.summaryBack ? `url(${require(`@/assets/images/${this.summaryBack}`)})` : ''
       }
     }
   },
