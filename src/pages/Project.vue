@@ -38,7 +38,7 @@
       </div>
     </div>
 
-    <ProjectSummary v-if="hasSummary()" :designDesc="project.designDesc" :colors="project.colors" :fonts="project.fonts" :filename="project.filename" />
+    <ProjectSummary v-if="hasSummary()" :summaryBack="project.summaryBack" :summaryList="project.summaryList" :filename="project.filename" />
   </div>
 </template>
 
@@ -65,7 +65,7 @@ export default {
   },
   methods: {
     hasSummary() {
-      return this.project.designDesc || this.project.colors || this.project.fonts
+      return this.project.summaryList && this.project.summaryList.length > 0
     },
     positionScroll(center) {
       window.scrollTo(center, 0)
