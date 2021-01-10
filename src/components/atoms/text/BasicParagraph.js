@@ -3,17 +3,18 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components'
 
 const StyledParagraph = styled.p`
-  font-size: 26px;
+  font-family: NotoSansKR;
+  font-size: 16px;
   font-weight: 300;
-  line-height: 46px;
+  line-height: 30px;
 `
-function LargeParagraph(props) {
+function BasicParagraph(props) {
   const { children, ...rest } = props
   return <StyledParagraph {...rest}>{ children }</StyledParagraph>
 }
 
-LargeParagraph.propTypes = {
+BasicParagraph.propTypes = {
   hidden: PropTypes.bool
 }
 
-export default LargeParagraph
+export default BasicParagraph

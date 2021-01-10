@@ -10,8 +10,6 @@ import logo from '../../../assets/img/img_logo.png'
 
 const StyledHeader = styled.header`
   position: relative;
-  width: 100%;
-  height: 110px;
   padding-top: 36px;
 `
 const LogoLink = styled(Link)`
@@ -47,6 +45,7 @@ const OPEN_INFO = {
 }
 
 function Header(props) {
+  const { refObj, scrollToRef, ...rest } = props
   const [isOpen, setIsOpen] = useState(false)
 
   function toggleMenu() {
@@ -56,7 +55,7 @@ function Header(props) {
   const openInfo = isOpen ? OPEN_INFO.CLOSE : OPEN_INFO.OPEN
 
   return (
-    <StyledHeader>
+    <StyledHeader {...rest}>
       <LogoLink to="/">
         <H1>
           <img src={logo} alt="Jieunnyo" />
@@ -67,7 +66,7 @@ function Header(props) {
         { openInfo.text }
       </StyledIconButton>
       
-      <MenuBox isOpen={isOpen} />
+      <MenuBox isOpen={isOpen} refObj={refObj} scrollToRef={scrollToRef} />
     </StyledHeader>
   )
 }

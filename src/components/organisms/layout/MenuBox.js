@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { HashRouter, Link } from 'react-router-dom'
 import classNames from 'classnames';
 import styled from 'styled-components';
 import { menuList } from '../../../data/global'
@@ -41,15 +41,24 @@ const StyledEmail = styled(A)`
 `
 
 function MenuBox(props) {
-  const { isOpen } = props
+  const {
+    isOpen,
+    toggleMenu,
+    refObj,
+    scrollToRef,
+    ...rest } = props
+
   
   return (
-    <StyledMenuBox isOpen={isOpen}>
+    <StyledMenuBox isOpen={isOpen} {...rest}>
       <StyledNav>
         <ul>
           {menuList.map(({id, title, url}) => (
             <li key={id}>
               <StyledLink to={url}>{title}</StyledLink>
+              {/* <HashRouter basename="/">
+                {title}
+              </HashRouter> */}
             </li>
           ))}
         </ul>

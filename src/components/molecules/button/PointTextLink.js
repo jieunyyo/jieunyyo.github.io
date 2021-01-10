@@ -62,7 +62,7 @@ function PointTextLink(props) {
   return (
     <StyledLink to={to} {...rest}>
       { children }
-      <Circle></Circle>
+      <Circle />
     </StyledLink>
   )
 }

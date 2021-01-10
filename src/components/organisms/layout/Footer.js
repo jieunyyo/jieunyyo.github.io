@@ -17,10 +17,10 @@ const StyledFooter = styled.footer`
 `
 
 function Footer(props) {
-  const { children } = props
+  const { ...rest } = props
   
   return (
-    <StyledFooter>
+    <StyledFooter {...rest}>
       <A className="eamil_footer" href="mailto:JIEUNYYO@NAVER.COM">
         JIEUNYYO@NAVER.COM
       </A>
