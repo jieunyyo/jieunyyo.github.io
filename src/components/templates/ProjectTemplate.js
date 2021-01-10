@@ -2,6 +2,10 @@ import React from 'react'
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
+const StyledContent = styled.div`
+  width: 1920px;
+  margin: 0 auto;
+`
 function ProjectTemplate(props) {
   const { 
     header: HeaderComponent,
@@ -20,7 +24,7 @@ function ProjectTemplate(props) {
   return (
     <div>
       <StyledHeader />
-      {children}
+      <StyledContent>{children}</StyledContent>
       <StyledFooter />
     </div>
   )

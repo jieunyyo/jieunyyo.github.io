@@ -7,7 +7,6 @@ const StyledContent = styled.div`
   margin: 110px auto 170px;
   padding: 0 360px;
 `
-
 function MainTemplate(props) {
   const { 
     header: HeaderComponent,

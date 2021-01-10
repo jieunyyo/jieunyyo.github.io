@@ -14,9 +14,16 @@ const StyledMedium = styled.strong`
   font-weight: 700;
   letter-spacing: -0.3px;
 `
+const StyledSmall = styled.strong`
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: -0.3px;
+`
 
 const getStyledComponent = size => {
   switch (size) {
+    case SIZE.SMALL:
+      return StyledSmall
     case SIZE.MEDIUM:
       return StyledMedium
     default:

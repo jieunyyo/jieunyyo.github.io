@@ -46,7 +46,6 @@ function VisualCard(props) {
   } = props
 
   const [realPath, setRealPath] = useState('')
-
   import(`../../../assets/img${imgPath}`).then(data => {
     setRealPath(data.default);
   });

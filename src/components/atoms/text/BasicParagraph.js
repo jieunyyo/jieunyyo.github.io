@@ -4,9 +4,9 @@ import styled from 'styled-components'
 
 const StyledParagraph = styled.p`
   font-family: NotoSansKR;
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 300;
-  line-height: 30px;
+  line-height: 32px;
 `
 function BasicParagraph(props) {
   const { children, ...rest } = props
