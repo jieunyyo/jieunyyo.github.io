@@ -6,7 +6,7 @@ const StyledContent = styled.div`
   width: 100%;
   min-width: 1920px;
   margin: 0 auto;
-  background-color: ${ props => props.color};
+  background-color: ${ props => props.color };
 `
 const StyledDiv = styled.div`
   width: 1920px;

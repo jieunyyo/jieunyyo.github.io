@@ -30,3 +30,7 @@ button {
   line-height: 0;
   text-indent: -9999px;
 }
+.show {
+  opacity: 1 !important;
+  margin-top: 0 !important;
+}
