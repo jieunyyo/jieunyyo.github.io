@@ -13,12 +13,16 @@ const StyledLargeText = styled(LargeBasicText)`
 `
 const StyledVideo = styled.video`
   display: block;
-  min-width: 1920px;
-  margin: 145px 0 0 -360px;
+  width: 100%;
 `
+
 function AboutPage() {
+  const Media = () => <StyledVideo src={video} type="video/mp4" loop autoPlay muted />
   return (
-    <AboutTemplate header={Header} footer={Footer} visual={''}>
+    <AboutTemplate
+      header={Header}
+      footer={Footer}
+      media={Media}>
       <PageTitle>ABOUT ME</PageTitle>
       <StyledLargeText>
         디자인은 소소한 일상을 양질의 순간으로 <br/>
@@ -34,7 +38,6 @@ function AboutPage() {
         디자인여행에서 프로젝트 진행이 바로 저에겐 설렘과 함께하는 순간이었습니다. 보다 더 발전해나가며 끊임없이 해결책을 <br/>
         찾는 일련의 과정들은 즐거운 싸움이었으며, 그러한 추지 않고 일할 수 있는 원동력으로 자리했습니다. I ♡ design<br/>
       </BasicParagraph>
-      <StyledVideo src={video} type="video/mp4" loop autoPlay muted />
     </AboutTemplate>
   )
 }
