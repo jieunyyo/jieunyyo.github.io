@@ -29,6 +29,7 @@ function AboutTemplate(props) {
   const StyledDiv = styled.div`
     width: 100%;
     margin: 145px auto 0;
+    background-color: #f3f3f3;
   `
 
   return (
