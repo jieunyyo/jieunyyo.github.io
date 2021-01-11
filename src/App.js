@@ -1,8 +1,9 @@
 import React, { Suspense, lazy } from 'react';
 import {
-  BrowserRouter as Router,
   Switch,
-  Route } from 'react-router-dom';
+  Route, 
+  HashRouter
+} from 'react-router-dom';
 
 import './assets/css/reset.css'
 import './assets/css/font.css'
@@ -17,7 +18,7 @@ import ProjectPage from './pages/ProjectPage';
 
 function App() {
   return (
-    <Router>
+    <HashRouter>
       {/* <Suspense fallback={<div>Loading...</div>}> */}
         <Switch>
           <Route exact path="/" render={routeProps => <MainPage {...routeProps} />}/>
@@ -25,7 +26,7 @@ function App() {
           <Route path="/project/:num" component={ProjectPage} />
         </Switch>        
       {/* </Suspense> */}
-    </Router>
+    </HashRouter>
   );
 }
 

@@ -2,6 +2,7 @@
   "name": "jieunyyo.github.io",
   "version": "0.2.0",
   "private": true,
+  "homepage": "https://jieunyyo.github.io/",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jieunyyo/jieunyyo.github.io.git"
