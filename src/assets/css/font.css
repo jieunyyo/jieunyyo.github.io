@@ -1,32 +1,44 @@
 @font-face {
   font-family: Montserrat;
   font-weight: 700;
-  src: url('../font/Montserrat-Bold.ttf')  format('truetype');
+  src: local('Montserrat Bold'), local('Montserrat-Bold'),
+       url('../font/Montserrat-Bold.ttf')  format('truetype');
 }
 @font-face {
   font-family: Montserrat;
   font-weight: 600;
-  src: url('../font/Montserrat-SemiBold.ttf')  format('truetype');
+  src: local('Montserrat SemiBold'), local('Montserrat-SemiBold'),
+       url('../font/Montserrat-SemiBold.ttf')  format('truetype');
 }
 @font-face {
-  font-family: NotoSansKR;
-  font-weight: 300;
-  src: url('../font/NotoSansKR-Light.otf')  format('opentype');
-}
+   font-family: NotoSansKR;
+   font-weight: 300;
+   src: local('Noto Sans KR Light'), local('NotoSansKR-Light'),
+        url('../font/NotoSansKR-Light.woff2') format('woff2'),
+        url('../font/NotoSansKR-Light.woff') format('woff'),
+        url('../font/NotoSansKR-Light.otf') format('opentype');
+ }
 @font-face {
-  font-family: NotoSansKR;
-  font-weight: 400;
-  src: url('../font/NotoSansKR-Regular.otf')  format('opentype');
-}
+   font-family: NotoSansKR;
+   font-style: normal;
+   font-weight: 400;
+   src: local('Noto Sans KR Regular'), local('NotoSansKR-Regular'),
+        url('../font/NotoSansKR-Regular.woff2') format('woff2'),
+        url('../font/NotoSansKR-Regular.woff') format('woff'),
+        url('../font/NotoSansKR-Regular.otf') format('opentype');
+ }
 @font-face {
-  font-family: NotoSansKR;
-  font-weight: 700;
-  src: url('../font/NotoSansKR-Bold.otf')  format('opentype');
-}
-
+   font-family: NotoSansKR;
+   font-style: bold;
+   font-weight: 700;
+   src: local('Noto Sans KR Bold'), local('NotoSansKR-Bold'),
+        url('../font/NotoSansKR-Bold.woff2') format('woff2'),
+        url('../font/NotoSansKR-Bold.woff') format('woff'),
+        url('../font/NotoSansKR-Bold.otf') format('opentype');
+ }
 
 html, body, button {
-  font-family: Montserrat, NotoSans, san-serif;
+  font-family: Montserrat, NotoSans, 'san-serif';
 }
 
 html, body, div, span, applet, object, iframe,
