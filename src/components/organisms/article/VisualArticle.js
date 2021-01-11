@@ -2,8 +2,10 @@ import React from 'react'
 import styled from 'styled-components'
 import { PointTextLink } from '../../molecules/button'
 import { StrongText, LargeParagraph } from '../../atoms/text';
+import image from '../../../assets/img/img_bubble.jpg'
 
 const StyledDiv = styled.div`
+  position: relative;
   padding: 85px 0 95px;
 `
 const StyledLargeStrong = styled(StrongText)`
@@ -12,6 +14,14 @@ const StyledLargeStrong = styled(StrongText)`
 const StyledLargeParagraph = styled(LargeParagraph)`
   margin: 50px 0 80px;
   color: #666;
+`
+const StyledImg = styled.img`
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 790px;
+  height: auto;
+  margin-right: -270px;
 `
 
 function VisualArticle(props) {
@@ -25,6 +35,7 @@ function VisualArticle(props) {
         제작하는 여행중입니다.
       </StyledLargeParagraph>
       <PointTextLink to="/about">저에대해 더 궁금하신가요?</PointTextLink>
+      <StyledImg src={image} alt="" />
     </StyledDiv>
   )
 }

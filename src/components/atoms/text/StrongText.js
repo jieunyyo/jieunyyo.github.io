@@ -7,7 +7,7 @@ const StyledLarge = styled.strong`
   font-size: 96px;
   font-weight: 700;
   line-height: 96px;
-  letter-spacing: -0.3px;
+  letter-spacing: -3.5px;
 `
 const StyledMedium = styled.strong`
   font-size: 80px;
