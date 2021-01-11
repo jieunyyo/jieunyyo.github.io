@@ -16,6 +16,8 @@ function ProjectInfo(props) {
   const [ realPath, setRealPath ] = useState('')
   import(`../../../assets/img${imgPath}`).then(data => {
     setRealPath(data.default)
+  }).catch(() => {
+    console.log('ProjectInfo error')
   });
 
   return (

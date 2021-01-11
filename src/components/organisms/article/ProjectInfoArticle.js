@@ -22,7 +22,6 @@ const StyledPoint = styled(ProjectPoint)`
   margin-bottom: 25px;
 `
 
-
 function ProjectInfoArticle(props) {
   const { 
     projectObj: {
@@ -38,13 +37,12 @@ function ProjectInfoArticle(props) {
     <StyledDiv {...rest}>
       <StyledStrong size={SIZE.SMALL}>Design element</StyledStrong>
       <StyledParagraph>{ designElement }</StyledParagraph>
-
-      <StyledPoint point={point} />
-
-      <ProjectColor colors={colors} />
-
-      { images.map(({ name, imgPath }) => {
-        return <ProjectInfo key={`INFO_${name}`} name={name} imgPath={imgPath} />
+      
+      { point && <StyledPoint point={point} />}
+      { colors && <ProjectColor colors={colors} />}
+      
+      { images && images.map(({ name, imgPath }) => {
+        return imgPath && <ProjectInfo key={`INFO_${name}`} name={name} imgPath={imgPath} />
       })}
     </StyledDiv>
   )

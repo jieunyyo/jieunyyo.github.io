@@ -1,6 +1,5 @@
 import React from 'react'
 import styled from 'styled-components'
-import { SIZE } from '../../../data/constant';
 import { StrongText, BasicParagraph } from '../../atoms/text';
 
 const StyledDiv = styled.div`

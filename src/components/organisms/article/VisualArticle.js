@@ -10,6 +10,7 @@ const StyledDiv = styled.div`
 `
 const StyledLargeStrong = styled(StrongText)`
   display: block;
+  margin-left: -3px;
 `
 const StyledLargeParagraph = styled(LargeParagraph)`
   margin: 50px 0 80px;

@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { SIZE } from '../../../data/constant';
-import { StrongText, BasicParagraph } from '../../atoms/text';
+import { StrongText } from '../../atoms/text';
 import ColorChip from '../../atoms/chip/ColorChip';
 import ico_arrow from '../../../assets/img/ico_arrow.jpg'
 

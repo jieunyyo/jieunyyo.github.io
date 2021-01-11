@@ -1,4 +1,4 @@
-import React, { createRef, useEffect, useRef } from 'react'
+import React, { useEffect } from 'react'
 import styled from 'styled-components'
 import MainTemplate from '../components/templates/MainTemplate'
 import Header from '../components/organisms/layout/Header'
