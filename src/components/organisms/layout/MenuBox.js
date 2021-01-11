@@ -44,8 +44,6 @@ function MenuBox(props) {
   const {
     isOpen,
     toggleMenu,
-    refObj,
-    scrollToRef,
     ...rest } = props
 
   
@@ -56,9 +54,6 @@ function MenuBox(props) {
           {menuList.map(({id, title, url}) => (
             <li key={id}>
               <StyledLink to={url}>{title}</StyledLink>
-              {/* <HashRouter basename="/">
-                {title}
-              </HashRouter> */}
             </li>
           ))}
         </ul>

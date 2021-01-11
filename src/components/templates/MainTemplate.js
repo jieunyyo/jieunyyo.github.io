@@ -1,8 +1,9 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 const StyledContent = styled.div`
+  // width: 100%;
   width: 1920px;
   margin: 110px auto 170px;
   padding: 0 360px;
@@ -16,18 +17,20 @@ function MainTemplate(props) {
   } = props
   
   const StyledHeader = styled(HeaderComponent)`
-    width: 1920px;
+    width: 100%;
+    min-width: 1920px;
     height: 110px;
   `
   const StyledFooter = styled(FooterComponent)`
-    width: 1920px;
+    width: 100%;
+    min-width: 1920px;
   `
   return (
-    <div className="template_main">
+    <Fragment>
       <StyledHeader {...headerProps} />
       <StyledContent>{children}</StyledContent>
       <StyledFooter />
-    </div>
+    </Fragment>
   )
 }
 

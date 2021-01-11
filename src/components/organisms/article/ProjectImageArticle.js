@@ -4,6 +4,9 @@ import styled from 'styled-components'
 const StyledDiv = styled.div`
   background-color: #f3f3f3;
 `
+const StyledImg = styled.img`
+  margin: 0 auto;
+`
 
 function ProjectImageArticle(props) {
   const { 
@@ -21,7 +24,7 @@ function ProjectImageArticle(props) {
 
   return (
     <StyledDiv {...rest}>
-      <img src={realPath} alt="" />
+      <StyledImg src={realPath} alt="" />
     </StyledDiv>
   )
 }

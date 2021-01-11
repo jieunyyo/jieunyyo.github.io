@@ -45,7 +45,7 @@ const OPEN_INFO = {
 }
 
 function Header(props) {
-  const { refObj, scrollToRef, ...rest } = props
+  const { ...rest } = props
   const [isOpen, setIsOpen] = useState(false)
 
   function toggleMenu() {
@@ -66,7 +66,7 @@ function Header(props) {
         { openInfo.text }
       </StyledIconButton>
       
-      <MenuBox isOpen={isOpen} refObj={refObj} scrollToRef={scrollToRef} />
+      <MenuBox isOpen={isOpen} />
     </StyledHeader>
   )
 }
