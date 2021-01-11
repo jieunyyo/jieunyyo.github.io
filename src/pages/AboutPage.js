@@ -6,6 +6,7 @@ import BasicParagraph from '../components/atoms/text/BasicParagraph'
 import PageTitle from '../components/atoms/text/PageTitle'
 import styled from 'styled-components'
 import video from '../assets/img/video_about.mp4'
+import { useEffect } from 'react'
 
 const StyledLargeText = styled(LargeBasicText)`
   display: block;
@@ -17,7 +18,13 @@ const StyledVideo = styled.video`
 `
 
 function AboutPage() {
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+  
   const Media = () => <StyledVideo src={video} type="video/mp4" loop autoPlay muted />
+
   return (
     <AboutTemplate
       header={Header}
