@@ -23,7 +23,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "deploy": "react-scripts build && gh-pages -d dist -b master"
+    "deploy": "react-scripts build && gh-pages -d build -b master"
   },
   "eslintConfig": {
     "extends": [
