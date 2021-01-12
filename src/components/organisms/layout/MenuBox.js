@@ -33,6 +33,9 @@ const StyledLink = styled(Link)`
   font-weight: 700;
   line-height: 56px;
   letter-spacing: -0.3px;
+  &:hover {
+    opacity: 0.7;
+  }
 `
 const StyledEmail = styled(A)`
   display: inline-block;

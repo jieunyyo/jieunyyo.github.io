@@ -16,6 +16,7 @@ const StyledStrong = styled(StrongText)`
   letter-spacing: -0.3px;
 `
 const StyledParagraph = styled(BasicParagraph)`
+  color: #666;
   line-height: 30px;
 `
 

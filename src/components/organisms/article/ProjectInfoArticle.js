@@ -27,6 +27,7 @@ const StyledParagraph = styled(BasicParagraph)`
   margin-bottom: 90px;
   line-height: 30px;
   color: #666;
+  white-space: pre-line;
   ${ props => getTransitionCss(props.order) }
 `
 const StyledPoint = styled(ProjectPoint)`
@@ -86,7 +87,6 @@ function ProjectInfoArticle(props) {
         size={SIZE.SMALL}>
           Design element
       </StyledTitle>
-
       <StyledParagraph
         className="obj_trans"
         order={2}>

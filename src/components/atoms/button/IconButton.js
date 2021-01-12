@@ -5,6 +5,7 @@ import styled from 'styled-components'
 import ico_menu from '../../../assets/img/ico_menu.png'
 import ico_close from '../../../assets/img/ico_close.png'
 import ico_blog from '../../../assets/img/ico_blog.png'
+import ico_blog_over from '../../../assets/img/ico_blog_over.png'
 
 export const ICON_TYPE = {
   MENU: 'MENU', 
@@ -15,6 +16,7 @@ export const ICON_PATH = {
   MENU: ico_menu,
   CLOSE: ico_close,
   BLOG: ico_blog,
+  BLOG_OVER: ico_blog_over,
 }
 
 const StyledA = styled.a`
@@ -34,6 +36,14 @@ const StyledA = styled.a`
     width: 40px;
     height: 40px;
     background: url(${props => ICON_PATH[props.iconType]}) center bottom / 40px auto no-repeat;
+    &:hover {
+      ${props => {
+        if (props.iconType === ICON_TYPE.BLOG) {
+          return `background-image: url(${ICON_PATH.BLOG_OVER})`
+        }
+      }}
+      
+    }
   }
 `
 
