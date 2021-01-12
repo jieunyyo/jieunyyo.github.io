@@ -1,2 +1,0 @@
-(this["webpackJsonpjieunyyo.github.io"]=this["webpackJsonpjieunyyo.github.io"]||[]).push([[12],{58:function(i,o,t){"use strict";t.r(o),o.default=t.p+"static/media/project_openstore_logo.1fcedfba.jpg"}}]);
-//# sourceMappingURL=12.f546e9cb.chunk.js.map

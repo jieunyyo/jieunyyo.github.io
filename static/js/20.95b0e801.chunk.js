@@ -1,0 +1,2 @@
+(this["webpackJsonpjieunyyo.github.io"]=this["webpackJsonpjieunyyo.github.io"]||[]).push([[20],{67:function(i,t,u){"use strict";u.r(t),t.default=u.p+"static/media/thumbnail04.8b41ad3c.jpg"}}]);
+//# sourceMappingURL=20.95b0e801.chunk.js.map
