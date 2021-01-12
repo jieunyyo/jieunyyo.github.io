@@ -1,0 +1,2 @@
+(this["webpackJsonpjieunyyo.github.io"]=this["webpackJsonpjieunyyo.github.io"]||[]).push([[6],{52:function(i,t,o){"use strict";o.r(t),t.default=o.p+"static/media/project_bonsol.b4f29d6b.jpg"}}]);
+//# sourceMappingURL=6.33bcd291.chunk.js.map
