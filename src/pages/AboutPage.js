@@ -15,6 +15,7 @@ const StyledLargeText = styled(LargeBasicText)`
 const StyledVideo = styled.video`
   display: block;
   width: 100%;
+  min-width: 1920px;
 `
 
 function AboutPage() {
